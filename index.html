@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debounce samples</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <article class="container btn_sample">
+      <section class="sample_container">
+        <div class="sample">
+          <h2 class="title">Without debounce</h2>
+          <div class="btn_debounce" id="btn_normal">
+            <button
+              class="btn btn--normal"
+              id="btn_normal_decrease"
+              value="remove"
+            >
+              -
+            </button>
+            <span class="text counter" id="normal_counter">0</span>
+            <button
+              class="btn btn--normal"
+              id="btn_normal_increase"
+              value="add"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div class="actions">
+          <h2 class="title">
+            Clicks: <span id="normal_click_counter">0</span>
+          </h2>
+          <button class="btn btn--clear" id="normal_clear">Clear!</button>
+        </div>
+      </section>
+      <section class="sample_container">
+        <div class="sample">
+          <h2 class="title">With debounce</h2>
+          <div class="btn_debounce" id="btn_debounce">
+            <button
+              class="btn btn--debounce"
+              id="btn_debounce_decrease"
+              value="remove"
+            >
+              -
+            </button>
+            <span class="text counter" id="debounce_counter">0</span>
+            <button
+              class="btn btn--debounce"
+              id="btn_debounce_increase"
+              value="add"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div class="actions">
+          <h2 class="title">
+            Clicks: <span id="debounce_click_counter">0</span>
+          </h2>
+          <button class="btn btn--clear" id="debounce_clear">Clear!</button>
+        </div>
+      </section>
+    </article>
+  </body>
+</html>
